@@ -1,0 +1,226 @@
+{
+    "utilisateur": [
+      {
+        "id": 1,
+        "email": "mbohlula@gmail.com",
+        "mdp": "$2y$10$9I2vH3YsIUXBmV/riX5K/.DtwV8njr30lJ9TC6R/jbWMZ6ovdvf3O",
+        "nom": "MBECK MBOH",
+        "prenom": "Lula",
+        "date_de_naissance": "2003-01-12",
+        "adresse": "123 Rue de la Poste",
+        "admin": true,
+        "statut_bannissement": false,
+        "profile_photo": "Luljn_User_Picture.jpg",
+        "description": "Je suis un développeur logiciel passionné"
+      },
+      {
+        "id": 2,
+        "email": "jamesross97@gmail.com",
+        "mdp": "$2y$10$qkPhmJegGX2Zk82b0EE9re8ZlZ8GuGSwhXFlP2/ZSiUFkkS4KXKj2",
+        "nom": "ROSS",
+        "prenom": "James",
+        "date_de_naissance": "1997-03-13",
+        "adresse": "17 Avenue GENDARME",
+        "admin": false,
+        "statut_bannissement": false,
+        "profile_photo": "8-bit City_1920x1080.jpg",
+        "description": "Salut je suis un(e) utilisateur(trice) de TSN"
+      },
+      {
+        "id": 3,
+        "email": "marctaylor@gmail.com",
+        "mdp": "$2y$10$NB/5iXABuRkfx9Kn0Yd13eW..nC/xDBqZS.jTTHQGEZpPdSuxb/HG",
+        "nom": "TAYLOR",
+        "prenom": "Marc",
+        "date_de_naissance": "2002-11-12",
+        "adresse": "14 Boulevard Pierront",
+        "admin": true,
+        "statut_bannissement": false,
+        "profile_photo": null,
+        "description": "Salut je suis un(e) utilisateur(trice) de TSN"
+      }
+    ],
+    "post": [
+      {
+        "id": 1,
+        "id_utilisateur": 1,
+        "contenu": "Ceci est mon premier post",
+        "date_creation": "2024-04-12",
+        "image": null,
+        "sensible": false
+      },
+      {
+        "id": 2,
+        "id_utilisateur": 2,
+        "contenu": "Ceci est mon post, le tout premier que je fait, merci de le lire",
+        "date_creation": "2024-04-16",
+        "image": null,
+        "sensible": false
+      },
+      {
+        "id": 3,
+        "id_utilisateur": 3,
+        "contenu": "Je suis un énorme fan de Hunter X Hunter, et j'espère que l'animé aura une suite très bientôt.",
+        "date_creation": "2024-04-21",
+        "image": "hunter_x_hunter_v2__meruem_e_komugi____icon_folder_by_ubagutobr_d80func.ico",
+        "sensible": false
+      },
+      {
+        "id": 4,
+        "id_utilisateur": 3,
+        "contenu": "Je suis un grand fan de mangas et d'animés.",
+        "date_creation": "2024-04-21",
+        "image": null,
+        "sensible": false
+      },
+      {
+        "id": 5,
+        "id_utilisateur": 1,
+        "contenu": "Je suis un grand fan de cet animé, j'attends sa suite avec impatience.",
+        "date_creation": "2024-04-22",
+        "image": "hunter_x_hunter_folder_icon_by_walad7ekaya_d7k1sz1(1).ico",
+        "sensible": false
+      },
+      {
+        "id": 6,
+        "id_utilisateur": 2,
+        "contenu": "Cet animé est juste fantastique",
+        "date_creation": "2024-04-22",
+        "image": "hunter_x_hunter_v3__hisoka____icon_folder_by_ubagutobr_d80jtem.ico",
+        "sensible": false
+      }
+    ],
+    "commentaire": [
+      {
+        "id": 1,
+        "id_utilisateur": 2,
+        "id_post": 1,
+        "contenu": "Ceci est mon commentaire sur ton post",
+        "date_creation": "2024-04-28",
+        "image": null
+      }
+    ],
+    "follow": [
+      {
+        "id": 1,
+        "id_follower": 1,
+        "id_following": 2,
+        "date_creation": "2024-04-21"
+      },
+      {
+        "id": 2,
+        "id_follower": 1,
+        "id_following": 3,
+        "date_creation": "2024-04-21"
+      }
+    ],
+    "likes": [
+      {
+        "id": 1,
+        "id_post": 1,
+        "id_utilisateur": 2,
+        "date_creation": "2024-05-01"
+      },
+      {
+        "id": 2,
+        "id_post": 1,
+        "id_utilisateur": 3,
+        "date_creation": "2024-05-01"
+      },
+      {
+        "id": 3,
+        "id_post": 5,
+        "id_utilisateur": 1,
+        "date_creation": "2024-05-01"
+      }
+    ],
+    "notificationGenerique": [
+      {
+        "id": 1,
+        "contenu": "Vous avez un nouveau follower"
+      },
+      {
+        "id": 2,
+        "contenu": "Vous avez un nouveau following"
+      },
+      {
+        "id": 3,
+        "contenu": "Un utilisateur a arrêté de vous follow"
+      },
+      {
+        "id": 4,
+        "contenu": "Vous avez arrêté de follow un utilisateur"
+      },
+      {
+        "id": 5,
+        "contenu": "Un de vos following a ajouté un nouveau post"
+      },
+      {
+        "id": 6,
+        "contenu": "Vous avez un nouveau like sur l'un de vos post"
+      },
+      {
+        "id": 7,
+        "contenu": "Vous avez un nouveau commentaire sur l'un de vos post"
+      },
+      {
+        "id": 8,
+        "contenu": "Un de vos post a été marqué comme 'sensible' par un administrateur"
+      },
+      {
+        "id": 9,
+        "contenu": "Un de vos post a été supprimé par un administrateur"
+      },
+      {
+        "id": 10,
+        "contenu": "Vous avez reçu un avertissement de la part d'un administrateur"
+      }
+    ],
+    "notification": [
+      {
+        "id": 1,
+        "id_utilisateur": 1,
+        "id_notificationGenerique": 2,
+        "id_post": null,
+        "id_commentaire": null,
+        "id_like": null,
+        "id_follow": 1,
+        "statut_lecture": false,
+        "date_creation": "2024-04-21"
+      },
+      {
+        "id": 2,
+        "id_utilisateur": 1,
+        "id_notificationGenerique": 2,
+        "id_post": null,
+        "id_commentaire": null,
+        "id_like": null,
+        "id_follow": 2,
+        "statut_lecture": false,
+        "date_creation": "2024-04-21"
+      },
+      {
+        "id": 3,
+        "id_utilisateur": 2,
+        "id_notificationGenerique": 1,
+        "id_post": null,
+        "id_commentaire": null,
+        "id_like": null,
+        "id_follow": 1,
+        "statut_lecture": false,
+        "date_creation": "2024-04-21"
+      },
+      {
+        "id": 4,
+        "id_utilisateur": 3,
+        "id_notificationGenerique": 1,
+        "id_post": null,
+        "id_commentaire": null,
+        "id_like": null,
+        "id_follow": 2,
+        "statut_lecture": false,
+        "date_creation": "2024-04-21"
+      }
+    ]
+  }
+  
