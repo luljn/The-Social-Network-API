@@ -1,226 +1,343 @@
 {
-    "utilisateur": [
-      {
-        "id": 1,
-        "email": "mbohlula@gmail.com",
-        "mdp": "$2y$10$9I2vH3YsIUXBmV/riX5K/.DtwV8njr30lJ9TC6R/jbWMZ6ovdvf3O",
-        "nom": "MBECK MBOH",
-        "prenom": "Lula",
-        "date_de_naissance": "2003-01-12",
-        "adresse": "123 Rue de la Poste",
-        "admin": true,
-        "statut_bannissement": false,
-        "profile_photo": "Luljn_User_Picture.jpg",
-        "description": "Je suis un développeur logiciel passionné"
-      },
-      {
-        "id": 2,
-        "email": "jamesross97@gmail.com",
-        "mdp": "$2y$10$qkPhmJegGX2Zk82b0EE9re8ZlZ8GuGSwhXFlP2/ZSiUFkkS4KXKj2",
-        "nom": "ROSS",
-        "prenom": "James",
-        "date_de_naissance": "1997-03-13",
-        "adresse": "17 Avenue GENDARME",
-        "admin": false,
-        "statut_bannissement": false,
-        "profile_photo": "8-bit City_1920x1080.jpg",
-        "description": "Salut je suis un(e) utilisateur(trice) de TSN"
-      },
-      {
-        "id": 3,
-        "email": "marctaylor@gmail.com",
-        "mdp": "$2y$10$NB/5iXABuRkfx9Kn0Yd13eW..nC/xDBqZS.jTTHQGEZpPdSuxb/HG",
-        "nom": "TAYLOR",
-        "prenom": "Marc",
-        "date_de_naissance": "2002-11-12",
-        "adresse": "14 Boulevard Pierront",
-        "admin": true,
-        "statut_bannissement": false,
-        "profile_photo": null,
-        "description": "Salut je suis un(e) utilisateur(trice) de TSN"
-      }
-    ],
-    "post": [
-      {
-        "id": 1,
-        "id_utilisateur": 1,
-        "contenu": "Ceci est mon premier post",
-        "date_creation": "2024-04-12",
-        "image": null,
-        "sensible": false
-      },
-      {
-        "id": 2,
-        "id_utilisateur": 2,
-        "contenu": "Ceci est mon post, le tout premier que je fait, merci de le lire",
-        "date_creation": "2024-04-16",
-        "image": null,
-        "sensible": false
-      },
-      {
-        "id": 3,
-        "id_utilisateur": 3,
-        "contenu": "Je suis un énorme fan de Hunter X Hunter, et j'espère que l'animé aura une suite très bientôt.",
-        "date_creation": "2024-04-21",
-        "image": "./assets/posts/hunter_x_hunter_v2__meruem_e_komugi____icon_folder_by_ubagutobr_d80func.ico",
-        "sensible": false
-      },
-      {
-        "id": 4,
-        "id_utilisateur": 3,
-        "contenu": "Je suis un grand fan de mangas et d'animés.",
-        "date_creation": "2024-04-21",
-        "image": null,
-        "sensible": false
-      },
-      {
-        "id": 5,
-        "id_utilisateur": 1,
-        "contenu": "Je suis un grand fan de cet animé, j'attends sa suite avec impatience.",
-        "date_creation": "2024-04-22",
-        "image": "./assets/posts/hunter_x_hunter_folder_icon_by_walad7ekaya_d7k1sz1(1).ico",
-        "sensible": false
-      },
-      {
-        "id": 6,
-        "id_utilisateur": 2,
-        "contenu": "Cet animé est juste fantastique",
-        "date_creation": "2024-04-22",
-        "image": "./assets/posts/hunter_x_hunter_v3__hisoka____icon_folder_by_ubagutobr_d80jtem.ico",
-        "sensible": false
-      }
-    ],
-    "commentaire": [
-      {
-        "id": 1,
-        "id_utilisateur": 2,
-        "id_post": 1,
-        "contenu": "Ceci est mon commentaire sur ton post",
-        "date_creation": "2024-04-28",
-        "image": null
-      }
-    ],
-    "follow": [
-      {
-        "id": 1,
-        "id_follower": 1,
-        "id_following": 2,
-        "date_creation": "2024-04-21"
-      },
-      {
-        "id": 2,
-        "id_follower": 1,
-        "id_following": 3,
-        "date_creation": "2024-04-21"
-      }
-    ],
-    "likes": [
-      {
-        "id": 1,
-        "id_post": 1,
-        "id_utilisateur": 2,
-        "date_creation": "2024-05-01"
-      },
-      {
-        "id": 2,
-        "id_post": 1,
-        "id_utilisateur": 3,
-        "date_creation": "2024-05-01"
-      },
-      {
-        "id": 3,
-        "id_post": 5,
-        "id_utilisateur": 1,
-        "date_creation": "2024-05-01"
-      }
-    ],
-    "notificationGenerique": [
-      {
-        "id": 1,
-        "contenu": "Vous avez un nouveau follower"
-      },
-      {
-        "id": 2,
-        "contenu": "Vous avez un nouveau following"
-      },
-      {
-        "id": 3,
-        "contenu": "Un utilisateur a arrêté de vous follow"
-      },
-      {
-        "id": 4,
-        "contenu": "Vous avez arrêté de follow un utilisateur"
-      },
-      {
-        "id": 5,
-        "contenu": "Un de vos following a ajouté un nouveau post"
-      },
-      {
-        "id": 6,
-        "contenu": "Vous avez un nouveau like sur l'un de vos post"
-      },
-      {
-        "id": 7,
-        "contenu": "Vous avez un nouveau commentaire sur l'un de vos post"
-      },
-      {
-        "id": 8,
-        "contenu": "Un de vos post a été marqué comme 'sensible' par un administrateur"
-      },
-      {
-        "id": 9,
-        "contenu": "Un de vos post a été supprimé par un administrateur"
-      },
-      {
-        "id": 10,
-        "contenu": "Vous avez reçu un avertissement de la part d'un administrateur"
-      }
-    ],
-    "notification": [
-      {
-        "id": 1,
-        "id_utilisateur": 1,
-        "id_notificationGenerique": 2,
-        "id_post": null,
-        "id_commentaire": null,
-        "id_like": null,
-        "id_follow": 1,
-        "statut_lecture": false,
-        "date_creation": "2024-04-21"
-      },
-      {
-        "id": 2,
-        "id_utilisateur": 1,
-        "id_notificationGenerique": 2,
-        "id_post": null,
-        "id_commentaire": null,
-        "id_like": null,
-        "id_follow": 2,
-        "statut_lecture": false,
-        "date_creation": "2024-04-21"
-      },
-      {
-        "id": 3,
-        "id_utilisateur": 2,
-        "id_notificationGenerique": 1,
-        "id_post": null,
-        "id_commentaire": null,
-        "id_like": null,
-        "id_follow": 1,
-        "statut_lecture": false,
-        "date_creation": "2024-04-21"
-      },
-      {
-        "id": 4,
-        "id_utilisateur": 3,
-        "id_notificationGenerique": 1,
-        "id_post": null,
-        "id_commentaire": null,
-        "id_like": null,
-        "id_follow": 2,
-        "statut_lecture": false,
-        "date_creation": "2024-04-21"
-      }
-    ]
-  }
-  
+  "utilisateur": [
+    {
+      "id": "1",
+      "email": "mbohlula@gmail.com",
+      "mdp": "$2y$10$9I2vH3YsIUXBmV/riX5K/.DtwV8njr30lJ9TC6R/jbWMZ6ovdvf3O",
+      "nom": "MBECK MBOH",
+      "prenom": "Lula",
+      "date_de_naissance": "2003-01-12",
+      "adresse": "123 Rue de la Poste",
+      "admin": true,
+      "statut_bannissement": false,
+      "profile_photo": "./assets/users/Luljn_User_Picture.jpg",
+      "description": "Je suis un développeur logiciel passionné",
+      "followings": [
+        {
+          "id": "2",
+          "nom": "ROSS",
+          "prenom": "James",
+          "profile_photo": "./assets/users/8-bit City_1920x1080.jpg"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "email": "jamesross97@gmail.com",
+      "mdp": "$2y$10$qkPhmJegGX2Zk82b0EE9re8ZlZ8GuGSwhXFlP2/ZSiUFkkS4KXKj2",
+      "nom": "ROSS",
+      "prenom": "James",
+      "date_de_naissance": "1997-03-13",
+      "adresse": "17 Avenue GENDARME",
+      "admin": false,
+      "statut_bannissement": false,
+      "profile_photo": "./assets/users/8-bit City_1920x1080.jpg",
+      "description": "Salut je suis un(e) utilisateur(trice) de TSN",
+      "followings": []
+    },
+    {
+      "id": "3",
+      "email": "marctaylor@gmail.com",
+      "mdp": "$2y$10$NB/5iXABuRkfx9Kn0Yd13eW..nC/xDBqZS.jTTHQGEZpPdSuxb/HG",
+      "nom": "TAYLOR",
+      "prenom": "Marc",
+      "date_de_naissance": "2002-11-12",
+      "adresse": "14 Boulevard Pierront",
+      "admin": true,
+      "statut_bannissement": false,
+      "profile_photo": "./assets/users/profile.png",
+      "description": "Salut je suis un(e) utilisateur(trice) de TSN",
+      "followings": []
+    },
+    {
+      "id": "4",
+      "nom": "MBECK",
+      "prenom": "Jonathan",
+      "email": "mbohlulajonathan4@gmail.com",
+      "adresse": "123 rue de Lattre",
+      "mdp": "7843412fc45f532771e30a8a85c822b3",
+      "date_de_naissance": "2024-05-29",
+      "admin": false,
+      "statut_bannissement": false,
+      "description": "Salut je suis un(e) utilisateur(trice) de TSN",
+      "profile_photo": "./assets/users/profile.png",
+      "followings": []
+    }
+  ],
+  "post": [
+    {
+      "id": "1",
+      "id_utilisateur": 1,
+      "contenu": "Ceci est mon premier post",
+      "date_creation": "2024-04-12",
+      "image": null,
+      "sensible": false,
+      "nom_utilisateur": "MBECK MBOH",
+      "prenom_utilisateur": "Lula",
+      "likes": 107
+    },
+    {
+      "id": "2",
+      "id_utilisateur": 2,
+      "contenu": "Ceci est mon post, le tout premier que je fait, merci de le lire",
+      "date_creation": "2024-04-16",
+      "image": null,
+      "sensible": false,
+      "nom_utilisateur": "ROSS",
+      "prenom_utilisateur": "James",
+      "likes": 12
+    },
+    {
+      "id": "3",
+      "id_utilisateur": 3,
+      "contenu": "Je suis un énorme fan de Hunter X Hunter, et j'espère que l'animé aura une suite très bientôt.",
+      "date_creation": "2024-04-21",
+      "image": "./assets/posts/hunter_x_hunter_v2__meruem_e_komugi____icon_folder_by_ubagutobr_d80func.ico",
+      "sensible": false,
+      "nom_utilisateur": "TAYLOR",
+      "prenom_utilisateur": "Marc",
+      "likes": 4
+    },
+    {
+      "id": "4",
+      "id_utilisateur": 3,
+      "contenu": "Je suis un grand fan de mangas et d'animés.",
+      "date_creation": "2024-04-21",
+      "image": null,
+      "sensible": false,
+      "nom_utilisateur": "TAYLOR",
+      "prenom_utilisateur": "Marc",
+      "likes": 7
+    },
+    {
+      "id": "5",
+      "id_utilisateur": 1,
+      "contenu": "Je suis un grand fan de cet animé, j'attends sa suite avec impatience.",
+      "date_creation": "2024-04-22",
+      "image": "./assets/posts/hunter_x_hunter_folder_icon_by_walad7ekaya_d7k1sz1(1).ico",
+      "sensible": false,
+      "nom_utilisateur": "MBECK MBOH",
+      "prenom_utilisateur": "Lula",
+      "likes": 307
+    },
+    {
+      "id": "6",
+      "id_utilisateur": 2,
+      "contenu": "Cet animé est juste fantastique",
+      "date_creation": "2024-04-22",
+      "image": "./assets/posts/hunter_x_hunter_v3__hisoka____icon_folder_by_ubagutobr_d80jtem.ico",
+      "sensible": false,
+      "nom_utilisateur": "ROSS",
+      "prenom_utilisateur": "James",
+      "likes": 17
+    },
+    {
+      "id": "7",
+      "contenu": "Test ajout nouveau Post",
+      "id_utilisateur": "1",
+      "date_creation": "2024-06-12T21:11:38.609Z",
+      "sensible": false,
+      "nom_utilisateur": "MBECK MBOH",
+      "prenom_utilisateur": "Lula",
+      "likes": 1
+    },
+    {
+      "id": "8",
+      "contenu": "Je suis nouveau sur cette plateforme, pour faire bref je suis un grand fan de mangas et d'animés",
+      "id_utilisateur": "4",
+      "date_creation": "2024-06-12T21:27:45.838Z",
+      "sensible": false,
+      "nom_utilisateur": "MBECK",
+      "prenom_utilisateur": "Jonathan",
+      "likes": 1
+    },
+    {
+      "id": "9",
+      "contenu": "Je fais un test d'ajout de post juste pour voir si ça fonctionne toujours correctement, car le code a été modifié.",
+      "id_utilisateur": "4",
+      "date_creation": "2024-06-20T21:12:09.188Z",
+      "sensible": false,
+      "nom_utilisateur": "MBECK",
+      "prenom_utilisateur": "Jonathan",
+      "likes": 1
+    }
+  ],
+  "commentaire": [
+    {
+      "id": "1",
+      "id_utilisateur": 2,
+      "id_post": 1,
+      "contenu": "Ceci est mon commentaire sur ton post",
+      "date_creation": "2024-04-28",
+      "image": null,
+      "nom_utilisateur": "ROSS",
+      "prenom_utilisateur": "James"
+    },
+    {
+      "id": "2",
+      "id_utilisateur": 2,
+      "id_post": 1,
+      "contenu": "Ceci est un autre commentaire sur ton post",
+      "date_creation": "2024-04-29",
+      "image": null,
+      "nom_utilisateur": "ROSS",
+      "prenom_utilisateur": "James"
+    },
+    {
+      "id": "3",
+      "id_utilisateur": 1,
+      "id_post": 1,
+      "contenu": "Ceci est mon commentaire sur mon  propre post",
+      "date_creation": "2024-04-31",
+      "image": null,
+      "nom_utilisateur": "MBECK MBOH",
+      "prenom_utilisateur": "Lula"
+    },
+    {
+      "id": "4",
+      "id_utilisateur": 3,
+      "id_post": 1,
+      "contenu": "Je me permets de commenter ce post",
+      "date_creation": "2024-05-05",
+      "image": null,
+      "nom_utilisateur": "TAYLOR",
+      "prenom_utilisateur": "Marc"
+    },
+    {
+      "id": "5",
+      "id_utilisateur": 4,
+      "id_post": 1,
+      "contenu": "Un commentaire de plus sur ce post",
+      "date_creation": "2024-05-31",
+      "image": null,
+      "nom_utilisateur": "MBECK",
+      "prenom_utilisateur": "Jonathan"
+    },
+    {
+      "id": "6",
+      "contenu": "Test ajout nouveau commentaire",
+      "image": null,
+      "id_utilisateur": "1",
+      "id_post": 1,
+      "date_creation": "2024-06-20T21:06:53.818Z",
+      "nom_utilisateur": "MBECK MBOH",
+      "prenom_utilisateur": "Lula"
+    },
+    {
+      "id": "7",
+      "contenu": "Et là je viens ajouter un commentaire",
+      "image": null,
+      "id_utilisateur": "4",
+      "id_post": 9,
+      "date_creation": "2024-06-20T21:12:31.291Z",
+      "nom_utilisateur": "MBECK",
+      "prenom_utilisateur": "Jonathan"
+    }
+  ],
+  "follow": [
+    {
+      "id": "1",
+      "id_follower": 1,
+      "id_following": 2,
+      "date_creation": "2024-04-21"
+    },
+    {
+      "id": "2",
+      "id_follower": 1,
+      "id_following": 3,
+      "date_creation": "2024-04-21"
+    }
+  ],
+  "likes": [
+    {
+      "id": "1",
+      "id_post": 1,
+      "id_utilisateur": 2,
+      "date_creation": "2024-05-01"
+    },
+    {
+      "id": "2",
+      "id_post": 1,
+      "id_utilisateur": 3,
+      "date_creation": "2024-05-01"
+    },
+    {
+      "id": "3",
+      "id_post": 5,
+      "id_utilisateur": 1,
+      "date_creation": "2024-05-01"
+    }
+  ],
+  "notificationGenerique": [
+    {
+      "id": "1",
+      "contenu": "Vous avez un nouveau follower"
+    },
+    {
+      "id": "2",
+      "contenu": "Vous avez un nouveau following"
+    },
+    {
+      "id": "3",
+      "contenu": "Un utilisateur a arrêté de vous follow"
+    },
+    {
+      "id": "4",
+      "contenu": "Vous avez arrêté de follow un utilisateur"
+    },
+    {
+      "id": "5",
+      "contenu": "Un de vos following a ajouté un nouveau post"
+    },
+    {
+      "id": "6",
+      "contenu": "Vous avez un nouveau like sur l'un de vos post"
+    },
+    {
+      "id": "7",
+      "contenu": "Vous avez un nouveau commentaire sur l'un de vos post"
+    },
+    {
+      "id": "8",
+      "contenu": "Un de vos post a été marqué comme 'sensible' par un administrateur"
+    },
+    {
+      "id": "9",
+      "contenu": "Un de vos post a été supprimé par un administrateur"
+    },
+    {
+      "id": "10",
+      "contenu": "Vous avez reçu un avertissement de la part d'un administrateur"
+    }
+  ],
+  "notification": [
+    {
+      "id": "1",
+      "id_utilisateur": 1,
+      "contenu": "Vous avez un nouveau following",
+      "statut_lecture": false,
+      "date_creation": "2024-04-21"
+    },
+    {
+      "id": "2",
+      "id_utilisateur": 1,
+      "contenu": "Vous avez un nouveau following",
+      "statut_lecture": false,
+      "date_creation": "2024-04-25"
+    },
+    {
+      "id": "3",
+      "id_utilisateur": 2,
+      "contenu": "Vous avez un nouveau follower",
+      "statut_lecture": false,
+      "date_creation": "2024-04-21"
+    },
+    {
+      "id": "4",
+      "id_utilisateur": 3,
+      "contenu": "Vous avez un nouveau follower",
+      "statut_lecture": false,
+      "date_creation": "2024-04-25"
+    }
+  ]
+}
